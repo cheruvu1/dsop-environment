@@ -10,7 +10,7 @@ istio:
   git:
     repo: https://repo1.dso.mil/platform-one/big-bang/apps/core/istio-controlplane.git
     path: "./chart"
-    tag: "1.8.4-bb.2"
+    #tag: "1.8.4-bb.2"
   ingress:
     key: ""
     cert: ""
@@ -25,28 +25,28 @@ istiooperator:
   git:
     repo: https://repo1.dso.mil/platform-one/big-bang/apps/core/istio-operator.git
     path: "./chart"
-    tag: "1.8.4-bb.1"
+    #tag: "1.8.4-bb.1"
 
 jaeger:
   enabled: true
   git:
     repo: https://repo1.dso.mil/platform-one/big-bang/apps/core/jaeger.git
     path: "./chart"
-    tag: "2.23.0-bb.1"
+   # tag: "2.23.0-bb.1"
 
 kiali:
   enabled: true
   git:
     repo: https://repo1.dso.mil/platform-one/big-bang/apps/core/kiali.git
     path: "./chart"
-    tag: "1.32.0-bb.2"
+    #tag: "1.32.0-bb.2"
 
 clusterAuditor:
   enabled: true
   git:
     repo: https://repo1.dso.mil/platform-one/big-bang/apps/core/cluster-auditor.git
     path: "./chart"
-    tag: "0.3.0-bb.1"
+    #tag: "0.3.0-bb.1"
   values:
     resources:
       requests:
@@ -59,7 +59,7 @@ gatekeeper:
   git:
     repo: https://repo1.dso.mil/platform-one/big-bang/apps/core/policy.git
     path: "./chart"
-    tag: "3.4.0-bb.4"
+ #   tag: "3.4.0-bb.4"
   values:
     replicas: 1
     resources:
@@ -73,7 +73,7 @@ logging:
   git:
     repo: https://repo1.dso.mil/platform-one/big-bang/apps/core/elasticsearch-kibana.git
     path: "./chart"
-    tag: "0.1.15-bb.0"
+    #tag: "0.1.15-bb.0"
   values:
     elasticsearch:
       master:
@@ -98,13 +98,13 @@ eckoperator:
   git:
     repo: https://repo1.dso.mil/platform-one/big-bang/apps/core/eck-operator.git
     path: "./chart"
-    tag: "1.6.0-bb.0"
+   # tag: "1.6.0-bb.0"
 
 fluentbit:
   git:
     repo: https://repo1.dso.mil/platform-one/big-bang/apps/core/fluentbit.git
     path: "./chart"
-    tag: "0.15.14-bb.0"
+   # tag: "0.15.14-bb.0"
   values:
     securityContext:
       privileged: true
@@ -114,7 +114,7 @@ monitoring:
   git:
     repo: https://repo1.dso.mil/platform-one/big-bang/apps/core/monitoring.git
     path: "./chart"
-    tag: "11.0.0-bb.24"
+   # tag: "11.0.0-bb.24"
   values:
     alertmanager:
       alertmanagerSpec:
@@ -160,7 +160,7 @@ twistlock:
   git:
     repo: https://repo1.dso.mil/platform-one/big-bang/apps/security-tools/twistlock.git
     path: "./chart"
-    tag: "0.0.6-bb.0"
+   # tag: "0.0.6-bb.0"
 
   values:
     console:
